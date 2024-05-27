@@ -641,4 +641,5 @@ install_service
 echo "\
 AdGuard Home is now installed and running
 you can control the service status with the following commands:
+If port 53 error on ubuntu run this 2 commands "sudo systemctl stop systemd-resolved.service" and "sudo systemctl disable systemd-resolved.service"  
 $sudo_cmd ${agh_dir}/AdGuardHome -s start|stop|restart|status|install|uninstall"
